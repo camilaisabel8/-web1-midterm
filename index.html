@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mid Term</title>
-
+ <!--here I link my css file so it is connected to my html-->
     <link href="styles.css/styles.css" rel="stylesheet">
 </head>
 <main>
+<!--Here I add my container that will hold all my main content, so I can organizer it 
+and edit it on css-->
 <div class="container">
 <header id="header">
 <h1>Lone Starfish</h1>
 <img src="midterm-assets/lone-starfish-wide.jpg" alt="image of starfish large">
 </header>
-
+<!--nav bar will hold the "links"(in this case inactive) to go to additional 
+web pages-->
 <nav id="navbar">
  <a href="#home">HOME</a>
  <a href="#story">STORY</a>
  <a href="#contact">CONTACT</a>
 </nav>
-
+<!--The body contains the article content and image (the main info).
+I also added a class to style it in css-->
 <body>
 <article class="article">
 <h2>Life of a Starfish</h2>
@@ -31,7 +35,7 @@
     halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
 </p>
 </article>
-
+<!--I used an unordered list here and added a class to the whole list -->
 <div class="list">
     <h2> Facts About Starfish</h2>    
         <ul>
@@ -41,18 +45,20 @@
     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
         </ul>   
 </div>
+<!--here I separated my contact area. I added a class to it.-->
 <div class="contact">
     <h2>Contact to learn more</h2>
     <form class="form">
+        <!--Here I add the form elements with labels and a class for styling -->
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" />
 
          <label for="email">Your Email</label>
         <input type="text" id="email" name="email" />
-
+        <!--for your massage I used textarea instead of input accurately to the given example-->
          <label for="message">Your Message</label>
         <textarea id="message" name="message"></textarea>
-
+        <!--here I add a paragraph to ask the user a question and radio buttons for responses -->
         <p>Would you like to visit the starfish?</p>
         <input type="radio" id="yes" name="visit" value="yes"/>
         <label for="yes">Yes</label>
@@ -62,7 +68,7 @@
 
         <input type="radio" id="maybe" name="visit" value="maybe"/>
         <label for="maybe">Maybe</label>
-    
+        <!--here I added my submit button-->
         <button type="submit">SEND</button>
     </form>
 </div>
